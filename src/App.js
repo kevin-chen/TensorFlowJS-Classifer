@@ -2,7 +2,7 @@ import React, { useReducer, useState, useRef } from 'react';
 import './App.css';
 import * as mobilenet from '@tensorflow-models/mobilenet'
 
-const stateMachine = {
+const stateMachine = { 
   initial: 'initial',
   states: {
     initial: { on: { next: 'loadingModel' } },
